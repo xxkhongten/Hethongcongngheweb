@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuchanh17</title>
+    <style>
+        body {
+            margin: 0 450px;
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+        
+        form {
+            box-shadow: 0 0 10px black;
+            padding: 2rem 1rem;
+        }
+        
+        label {
+            display: block;
+            text-align: left;
+        }
+        
+        .ct {
+            margin-top: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Travel reservations form</h2>
+        <h4>* denotes mandatory</h4>
+        <div class="ct">
+            <label>Full Name*: </label>
+            <input type="text" name="Full name" placeholder="First name Last name" id="Full name" />
+        </div>
+        <div class="ct">
+            <label>Email address*: </label>
+            <input type="email" name="Email address" placeholder="EMAIL_ADDRESS" id="Email address" />
+        </div>
+        <div class="ct">
+            <label>Select Tour Package*: </label>
+            <select name="tour_package" id="tour_package">
+          <option value="">Hà Nội</option>
+          <option value="">Hồ Chí Minh</option>
+          <option value="">Đà Nẵng</option>
+          <option value="">Sa Pa</option>
+        </select>
+        </div>
+        <div class="ct">
+            <label>Arrival date*: </label>
+            <input type="date" name="arrival_date" placeholder="m/d/y" id="arrival_date" />
+        </div>
+        <div class="ct">
+            <label>Number of Person*: </label>
+            <input type="text" name="numberofperson" placeholder="UNKNOWN_TYPE" id="numberofperson" />
+        </div>
+        <div class="ct">
+            <ul>
+                <label for="">What would you want to avail</label>
+                <li>
+                    <span>Boarding</span>
+                    <input type="checkbox" name="Boarding" id="Boarding" />
+                </li>
+                <li>
+                    <span>Fooding</span>
+                    <input type="checkbox" name="Fooding" id="Fooding" />
+                </li>
+                <li>
+                    <span>Sight seeing</span>
+                    <input type="checkbox" name="sigh_seeing" id="sigh_seeing" />
+                </li>
+            </ul>
+        </div>
+        <div class="ct">
+            <label for="">Terms and Conditions</label>
+            <ul style="display: flex">
+                <li>
+                    <input type="radio" name="agree" id="agree" />
+                    <span>I agree</span>
+                </li>
+                <li>
+                    <input type="radio" name="agree" id="agree" />
+                    <span>I disagree</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ct">
+            <input type="submit" value="Complete  reservations" />
+        </div>
+    </form>
+</body>
+
+</html>

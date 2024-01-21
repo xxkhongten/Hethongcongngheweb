@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuchanh16</title>
+    <style>
+        .tong {
+            width: 100%;
+            height: 1200px;
+            /* background-color: bisque; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content {
+            width: 40%;
+            height: 99%;
+            background-color: rgb(249, 255, 229);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .ct1 {
+            width: 100%;
+            height: 40%;
+            /* background-color: rgb(255, 228, 185); */
+        }
+        
+        label {
+            display: inline-block;
+            min-width: 100px;
+        }
+        
+        form {
+            width: 100%;
+            height: 100%;
+        }
+        
+        input[type='text'] {
+            padding: 2px;
+            margin-bottom: 5px;
+        }
+        
+        .ct2 {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 16%;
+            /* background-color: pink; */
+        }
+        
+        .ct3 {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 11%;
+            /* background-color: rgb(248, 137, 155); */
+        }
+        
+        .ct4 {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 17.5%;
+            /* background-color: rgb(24, 184, 18); */
+        }
+        
+        .ct5 {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 16%;
+            /* background-color: rgb(255, 255, 255); */
+        }
+        
+        #trong5 {
+            width: 100%;
+            height: 61%;
+            /* background-color: rgba(142, 75, 204, 0.493); */
+            padding: 2px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        .ct6 {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 5%;
+            /* background-color: rgb(24, 204, 39); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tong">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Your message</legend>
+                    <div class="ct1">
+                        <div class="ct1a">
+                            <label class="lb1">To :</label>
+                            <input type="text" name="To" id="" />
+                        </div>
+                        <div class="ct1a">
+                            <label class="lb1">Your email : </label>
+                            <input type="email" name="To" id="" />
+                        </div>
+                        <div class="ct1a">
+                            <label class="lb1">Message : </label>
+                            <textarea name="" id="" cols="32" rows="8"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="ct2">
+                    <fieldset>
+                        <legend>How you found us</legend>
+                        <div class="ct2a">
+                            <label>
+                  <p style="width: 110px">How did you hear of us</p>
+                </label>
+                            <select name="" id="">
+                  <option value="">Google</option>
+                  <option value="">Facebook</option>
+                  <option value="">Github</option>
+                  <option value="">Twitter</option>
+                </select>
+                            <div class="cta2a" style="display: flex">
+                                <span style="min-width: 113px">Newsletter</span>
+                                <div style="display: flex">
+                                    <input type="checkbox" name="" id="" />Ensure this box is checked if you would like to receive email updates
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Send message" style="margin-top: 10px" />
+                </div>
+                <div class="ct3">
+                    <fieldset>
+                        <legend>Contact information</legend>
+                        <div class="ct3a">
+                            <label for="">First Name :</label>
+                            <input type="text" name="" id="" />
+                        </div>
+                        <div class="ct3a">
+                            <label for="">Last Name :</label>
+                            <input type="text" name="" id="" />
+                        </div>
+                        <div class="ct3a">
+                            <label for="">E-Mail :</label>
+                            <input type="email" name="" id="" />
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="ct4">
+                    <fieldset>
+                        <legend>Competition Question</legend>
+                        <ul>
+                            <p>How tall is the Eiffel Tower in Paris, France?</p>
+                            <li>
+                                <input type="radio" name="name1" id="" /><span>584 ft</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="name1" id="" /><span>784 ft</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="name1" id="" /><span>984 ft</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="name1" id="" /><span>1184 ft</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <legend>Tiebreaker Question</legend>
+                    <div class="ct5">
+                        <p>In 25 words or less, say why you would like to win $10,000:</p>
+                        <div id="trong5">
+                            <textarea name="" id="" cols="27" rows="10" style="width: 98%; height: 100%"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Enter Competition</legend>
+                    <div class="ct6">
+                        <input type="submit" value="Enter Competition" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

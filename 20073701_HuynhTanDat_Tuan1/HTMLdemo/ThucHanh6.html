@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset="UTF-8"/>
+        <title>ThucHanh6</title>
+    <style>
+        .content{
+            width: 100%;
+            height: 100%;
+        }
+        .content1{
+            float: left;
+            /* background-color:red;  */
+        }
+        .content2{
+            float: right;
+            background-attachment:pink;
+        }
+    </style>
+    </Head>
+    <body>
+        <div class="content">
+            <!-- <div class="content1"> -->
+                <table align="left" width = 250  height = 200 border="1px" style="border-color: red">
+                    <caption align="bottom">
+                        <p style="color: black"> Bảng 1</p>
+                    </caption>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="4">2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">3</td>
+                        <td style="background-color:orange">4</td>
+                        <td style="background-color:orange">5</td>
+                        <td colspan ="2", rowspan ="2" style="background-color:yellow">6</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:orange">7</td>
+                        <td style="background-color:orange">8</td>
+                    </tr>
+                    <tr>
+                        <td colspan ="2" style="background-color:yellow">9</td>
+                        <td colspan = "2" style ="background-color:yellow">10</td>
+                    </tr>
+                </table>
+            <!-- </div> -->
+                <table align="right" width="700" height="400" border="1px solid black" cellspacing="0" cellpadding="20">
+                    <caption align="bottom">
+                        <p style="color:aqua">Bảng 2</p>
+                    </caption>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>3</td>
+                    </tr>
+                    
+                </table>
+        </div>
+
+    </body>
+</html>

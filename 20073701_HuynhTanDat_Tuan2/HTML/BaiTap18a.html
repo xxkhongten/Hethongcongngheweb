@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuchanh18a</title>
+    <style>
+        body {
+            margin: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+        }
+        
+        .tong {
+            width: 100%;
+            height: 1200px;
+            background-color: rgb(247, 229, 130);
+            padding: 0px 10px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        ul li {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        select {
+            height: 30px;
+            width: 88px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="tong">
+        <form action="">
+            <h1>
+                Survey Form
+            </h1>
+            <p>If you are interested in purchasing one or more of our products, before ordering please complete" some or all of the following survey for our marketing depart1nent. Answer ing any question is "optiona l, and all information will be kept strictly
+                confidential. Thank you very much for your time!
+            </p>
+            <ul>
+                <li>
+                    <label for="">1. What is your name ?</label> <br>
+                    <input type="text" name="" id="" style="
+                margin-left: 35px;
+                width: 220px; height: 20px;">
+                </li>
+                <li>
+                    <label for="">2. What is your date of birth ?</label> <br> Month : <select name="" id="">
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November</option>
+                    <option value="">December</option>
+                </select> Date:
+                    <select name="" id="">
+                    <script>
+                        for(i = 1 ; i<=31;i++)
+                        {
+                            document.write("<Option> "+i+" </Option>");
+                        }
+                    </script>
+                </select> Year:
+                    <input type="text" name="" id="" style="width:86px;height:25px">
+                </li>
+                <li>
+                    <label for="">3. What is your mailling address (if you would like to have a hard copy of your catalog sent to you)</label> <br>
+                    <textarea name="" id="" cols="30" rows="10" style="width: 400px;height: 90px;margin-left: 35px;" placeholder="Number/P.0. Box/Route               Street/Avenue/Road:                               City:                                                 Statezip: "></textarea>
+                </li>
+                <li>
+                    <label for="">4. What is your email address ?</label> <br>
+                    <input type="email" name="" id="" style="
+                margin-left: 35px;
+                width: 220px; height: 20px;">
+                </li>
+                <li>
+                    <label for="">5. Have you viewed our online product catalog</label> <br>
+                    <input type="radio" name="chon" id=""> <span>Yes</span>
+                    <input type="radio" name="chon" id=""> <span>No</span>
+                </li>
+                <li>
+                    <label for="">6. If so, what product(s), besides the one you are ordering, might you be interested in purchasing 
+                        in the future? (Check all that apply.)</label> <br>
+                    <input type="checkbox" name="" id="">VCR <br>
+                    <input type="checkbox" name="" id="">Big Screen TV <br>
+                    <input type="checkbox" name="" id="">Audio Equiment <br>
+                    <input type="checkbox" name="" id="">Video Equiment <br>
+                    <input type="checkbox" name="" id="">Camera Equiment <br>
+                    <input type="checkbox" name="" id="">Other <input type="text" name="" id="" placeholder="Please List:" style="height:20px">
+                </li>
+                <li>
+                    <label for="">7. Do you have any questions. comme nts or suggestions before proceeding to the Order Form?</label> <br>
+                    <textarea name="" id="" cols="30" rows="10" style="width: 400px;height: 90px;margin-left: 35px;" placeholder="Your input:  "></textarea>
+                </li>
+                <li style="
+                text-align: center;
+            ">
+                    <input type="submit" name="" id="" value="SendForm" style="height: 30px;">
+                    <input type="reset" name="" id="" value="ClearForm" style="height: 30px;">
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

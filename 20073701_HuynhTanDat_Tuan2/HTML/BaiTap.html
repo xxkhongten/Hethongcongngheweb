@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css" />
+  </head>
+  <body>
+
+    <button class="blue">blue</button>
+    <button class="red">red</button>
+    <button class="yellow">yellow</button>
+    <form action="">
+      <input type="color"></inpu>
+    </form>
+    <div>
+      <button class="reszie">resize image</button>
+      <img class="img1" src="../IMAGE/Hinh-anh-mat-cuoi.jpg" alt="">
+    </div>
+    <div>
+      <button class="change">change background</button>
+      <img class="img2" src="../IMAGE/Hinh-anh-mat-cuoi.jpg" alt="">
+    </div>
+    <script>
+
+      let $ = document.querySelector.bind(document)
+      let input = $('input[type="color"]')
+      input.addEventListener('change', function () {
+        document.body.style.backgroundColor = this.value
+      })
+      //create function change background color from button have class blue red and yellow
+      let red = $('.red')
+      red.addEventListener('click', function () {
+        document.body.style.backgroundColor = 'red'
+      })
+      let blue = $('.blue')
+      blue.addEventListener('click', function () {
+        document.body.style.backgroundColor = 'blue'
+      })
+      let yellow = $('.yellow')
+      yellow.addEventListener('click', function () {
+        document.body.style.backgroundColor = 'yellow'
+      })
+
+      let reszie = $('.reszie')
+      reszie.addEventListener('click', function () {
+        let img = $('.img1')
+        img.style.width = '100px'
+        img.style.height = '100px'
+      })
+      let change = $('.change')
+      change.addEventListener('click', function () {
+        let img = $('.img2')
+        img.src = './img/download.jpg'
+      })
+    </script>
+  </body>
+</html>

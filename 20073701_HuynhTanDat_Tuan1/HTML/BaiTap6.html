@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuchanh6</title>
+    <style>
+        .content {
+            width: 100%;
+            height: 554px;
+            /* background-color: cyan; */
+            overflow: hidden;
+            /* border: 1px solid;
+        box-shadow: 2px 2px 2px rgb(59, 59, 59); */
+        }
+        
+        .content1 {
+            float: left;
+            /* background-color: pink; */
+        }
+        
+        .content2 {
+            float: right;
+            width: 60%;
+            height: 100%;
+            /* background-color: yellow; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content1">
+            <table style="width: 300px; height: 250px" border="1px solid black">
+                <caption>
+                    <h2 style="color: orange">Bảng 1</h2>
+                </caption>
+                </caption>
+                <tr>
+                    <td>1</td>
+                    <td colspan="3">2</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">3</td>
+                    <td style="background-color: orange">4</td>
+                    <td style="background-color: orange">5</td>
+                    <td rowspan="2" ,colspan="2" style="background-color: yellow">6</td>
+                </tr>
+                <tr>
+                    <td style="background-color: orange">7</td>
+                    <td style="background-color: orange">8</td>
+                </tr>
+                <tr>
+                    <td rowspan="1" colspan="2" style="background-color: yellow">9</td>
+                    <td rowspan="2" ,colspan="2" style="background-color: yellow">
+                        10
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="content2">
+            <table style="width: 600px; height: 350px" border="1px solid black" cellspacing="0" cellpadding="18">
+                <caption>
+                    <h2 style="color: orange">Bảng 2</h2>
+                </caption>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th colsp`an="2 ">Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td colspan="2">50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td colspan="2">94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td colspan="2">80</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td colspan="2">3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

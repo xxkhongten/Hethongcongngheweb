@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./15_2.css" />
+    <title>Thuchanh18b</title>
+    <style>
+        .mt-1 {
+            margin-top: 1rem;
+        }
+        
+        .form {
+            display: flex;
+        }
+        
+        .form input,
+        .form textarea {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="form">
+            <label for="browser">Browser</label>
+            <input list="browsers" name="browser" id="browser" />
+            <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+        </div>
+        <div class="mt-1 form">
+            <label for="name">User name</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form mt-1">
+            <label for="incrytion">Encrytion</label>
+            <input list="incrytions" name="incrytion" id="incrytion" required />
+            <datalist id="incrytions">
+          <option value="REACT"></option>
+          <option value="ANGULAR"></option>
+          <option value="VUE"></option>
+          <option value="NEXTJS"></option>
+          <option value="GRAPHQL"></option>
+        </datalist>
+        </div>
+        <div class="mt-1 form">
+            <!-- <input type="range" /> -->
+            <input type="range" value="25" min="0" max="100" oninput="this.nextElementSibling.value = this.value" />
+            <input type="text" name="range" id="range" value="25" />
+        </div>
+        <div class="mt-1 form">
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="color">Select favorite color</label>
+            <input type="color" id="color" name="color" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="birthday2">Birthday(monh and year)</label>
+            <input type="month" id="birthday2" name="birthday2" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="week">Select a week</label>
+            <input type="week" id="week" name="week" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="time">Select a time</label>
+            <input type="time" id="time" name="time" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="dateandtime">Birthday (date and time)</label>
+            <input type="text" id="dateandtime" name="dateandtime" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="search">Seacrh Google</label>
+            <input type="text" id="search" name="search" required />
+        </div>
+        <div class="mt-1 form">
+            <label for="telephone">Telephone</label>
+            <input type="text" id="telephone" name="telephone" required />
+        </div>
+
+        <div class="mt-1 form">
+            <label for="homepage">Homepage</label>
+            <input type="text" id="homepage" name="homepage" required />
+        </div>
+
+        <button typ="submit" class="mt-1">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0 400px;
+}
+
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* remove animation for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+form {
+    box-shadow: 0 0 10px black;
+    padding: 3rem 1rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    min-width: 100px;
+}
+
+
+/* input {
+  width: 100%;
+} */
+
+.form {
+    display: flex;
+}
+
+.form input,
+.form textarea {
+    flex: 1;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.favorite {
+    width: 30%;
+    /* padding: 2rem; */
+}
+
+::placeholder {
+    color: blue;
+    background-color: blue;
+}
+
+.email,
+.select {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
